@@ -1,0 +1,86 @@
+/*Estilos da página index*/
+
+.font30 {
+  font-size: 30px;
+}
+
+.divmenu {
+  display: flex;
+  justify-content: center;
+}
+
+#menu li {
+  display: inline;
+}
+
+#menu li a {
+  text-decoration: none;
+  font-size: larger;
+  margin: 40px;
+  color: #3c6382;
+}
+
+#menu li a:hover {
+  color: gray;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentationtext {
+  text-align: justify;
+  font-size: 50px;
+  padding: 30px;
+  color: #0c2461;
+}
+
+.presentationimg {
+  width: 400px;
+  height: 400px;
+}
+
+.center {
+  text-align: center;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.noticia {
+  display: flex;
+  flex-flow: row-reverse;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.noticiatext {
+  padding: 30px;
+  color: #0c2461;
+  text-align: justify;
+}
+
+.embed {
+  padding: 20px;
+}
+
+body {
+  background-color: #fad390;
+}
+
+/*Estilos da página opinião*/
+
+.titulo {
+  font-size: 50px;
+  color: #fa983a;
+}
+
+#opiniao {
+  width: 499px;
+  height: 78px;
+}
