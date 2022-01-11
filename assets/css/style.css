@@ -1,4 +1,5 @@
 /*Estilos da página index*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 .font30 {
   font-size: 30px;
@@ -16,6 +17,7 @@
 #menu li a {
   text-decoration: none;
   font-size: larger;
+  font-family: 'Roboto Condensed', sans-serif;
   margin: 40px;
   color: #3c6382;
 }
@@ -36,6 +38,7 @@
   font-size: 50px;
   padding: 30px;
   color: #0c2461;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .presentationimg {
@@ -63,6 +66,7 @@
   padding: 30px;
   color: #0c2461;
   text-align: justify;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .embed {
@@ -78,6 +82,7 @@ body {
 .titulo {
   font-size: 50px;
   color: #fa983a;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #opiniao {
