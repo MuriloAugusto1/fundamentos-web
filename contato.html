@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="assets/img/android-chrome-192x192.png" class="logo"
+      /></a>
+      <h1 class="center titulo">CONTATO</h1>
+      <hr />
+      <div class="divmenu">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="opiniao.html">Avalie-nos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <hr />
+    </header>
+
+    <div class="containercontato">
+      <form>
+        <div class="forms">
+          <h1 class="center">Entre em contato conosco!</h1>
+          <label for="Nome" class="mb-2">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            class="mb-5 caixa"
+            onkeyup="validaNome()"
+          />
+          <div id="txtNome"></div>
+          <label for="email" class="mb-2">E-mail:</label>
+          <input
+            type="text"
+            id="email"
+            class="mb-5 caixa"
+            onkeyup="validaEmail()"
+          />
+          <div id="txtEmail"></div>
+          <label for="assunto" class="mb-2">Assunto:</label>
+          <input
+            type="text"
+            id="assunto"
+            class="mb-5 caixa"
+            onkeyup="validaAssunto()"
+          />
+          <div id="txtAssunto"></div>
+          <label for="mensagem" class="mb-2">Mensagem:</label>
+          <textarea
+            class="mb-5 caixa"
+            name="mensagem"
+            id="mensagem"
+            cols="30"
+            rows="10"
+            onkeyup="validaMensagem()"
+          ></textarea>
+          <div id="txtMensagem"></div>
+          <button class="mb-5 caixa" onclick="enviar()">Enviar</button>
+        </div>
+      </form>
+
+      <div class="map">
+        <h1 class="center">Ou venha nos conhecer fisicamente!</h1>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.806952471474!2d-46.69063758441509!3d-23.57537586799653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce577295c421fd%3A0x3aba96ace48f8261!2sJardins%2C%20S%C3%A3o%20Paulo%20-%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1641997644132!5m2!1sen!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          onmousemove="mapaZoom()"
+          onmouseout="mapaNormal()"
+          id="mapa"
+        ></iframe>
+        <p class="black">Jardins, São Paulo</p>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

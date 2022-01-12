@@ -1,5 +1,9 @@
 /*Estilos da página index*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  margin: 0;
+}
 
 .font30 {
   font-size: 30px;
@@ -8,22 +12,24 @@
 .divmenu {
   display: flex;
   justify-content: center;
+  background-color: #f6b93b;
 }
 
-#menu li {
-  display: inline;
+.menu li {
+  display: inline-block;
 }
 
-#menu li a {
+.menu li a {
   text-decoration: none;
   font-size: larger;
-  font-family: 'Roboto Condensed', sans-serif;
-  margin: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-right: 40px;
+  margin-left: 40px;
   color: #3c6382;
 }
 
-#menu li a:hover {
-  color: gray;
+.menu li a:hover {
+  color: #079992;
 }
 
 .container {
@@ -38,7 +44,7 @@
   font-size: 50px;
   padding: 30px;
   color: #0c2461;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .presentationimg {
@@ -46,8 +52,17 @@
   height: 400px;
 }
 
+.logo {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 50px;
+  height: 50px;
+}
+
 .center {
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .p-30 {
@@ -60,13 +75,29 @@
   padding: 40px;
   justify-content: center;
   align-items: center;
+  border: 5px solid #fa983a;
+  background-color: #fa983a;
+}
+
+hr {
+  border-color: #f6b93b;
+}
+
+.noticia2 {
+  display: flex;
+  flex-flow: row;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #e58e26;
+  background-color: #e58e26;
 }
 
 .noticiatext {
   padding: 30px;
   color: #0c2461;
   text-align: justify;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .embed {
@@ -82,10 +113,53 @@ body {
 .titulo {
   font-size: 50px;
   color: #fa983a;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: auto;
 }
 
 #opiniao {
-  width: 499px;
-  height: 78px;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 80px;
+}
+
+/*Estilos da página contato*/
+
+.mb-5{
+  margin-bottom: 5px;
+}
+
+.mb-2{
+  margin-bottom: 2px;
+}
+
+.containercontato{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.map{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fa983a;
+}
+
+.forms{
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fa983a;
+  padding: 50px;
+}
+
+.caixa{
+  border-color: #f6b93b;
+}
+
+.black{
+  color: black;
 }
